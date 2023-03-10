@@ -60,20 +60,46 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <p>Leave your contacts and we will call you back</p>
           <button class="close" data-modal-close type="button">
-            <!-- <svg class="close-icon" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8 .806 7.194 0 4 3.194.806 0 0 .806 3.194 4 0 7.194.806 8 4 4.806 7.194 8 8 7.194 4.806 4 8 .806Z"
-              />
-            </svg> -->
-            <svg class="close-icon">
-              <use href="./images/symbol-defs.svg#xrect"></use>
-
-            </svg>
+              <svg class="close-icon"><use href="./images/symbol-defs.svg#xrect"></use></svg>
           </button>
-        </div>
-      </div>
+          <form>
+          <div class="modal-form">
+              <div><div class="modal-item"><input class="input-name" id="modal-name" type="text" name="name"> 
+              <svg class="icon-modal icon-name" width="12px" height="12px"><use href="./images/symbol-defs.svg#icon-Name"></use></svg></div>
+              <label for="modal-name">Name</label></div>
+              <div><div class="modal-item"><input class="input-tel" id="modal-tel" type="tel" name="tel"/>
+              <svg class="icon-modal icon-tel" width="13px" height="13px"><use href="./images/symbol-defs.svg#icon-Tel" ></use></svg></div>
+              <label for="modal-tel">Phone</label></div>
+              <div><div class="modal-item"><input class="input-mail" id="modal-mail" type="email" name="mail"/>
+              <svg class="icon-modal icon-mail" width="17px" height="12px"><use href="./images/symbol-defs.svg#icon-Mail" ></use></svg></div>
+              <label for="modal-mail">Email</label></div>
 
+            <div><textarea name="comment" id="modal-comment" cols="30" rows="10" placeholder="Text input"></textarea>
+              <label for="modal-comment">Comment</label></div>
+            </div>
+            
+            <div class="checkbox-container"><input class="modal-checkbox" id="modal-checkbox" type="checkbox" name="checkbox"/>
+              <label class="checkbox-label" for="modal-checkbox"><span class="border-checkbox"></span> <span class="icon-checkbox">
+              <svg><use href="./images/symbol-defs.svg#icon-Checked"></use></svg></span>I accept the terms and conditions of the <span>Privacy Policy</span>
+            </label></div>
+              
+              
+              <button class="modal-button" type="submit">Send</button>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </form>
+        
+      </div>
+      </div>
       <section class="advantages">
         <h2 class="tittle visually-hidden">our advantages</h2>
         <div class="container">
@@ -472,6 +498,21 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <div class="form-flex">
+          <label class="label" for="footer-mail">
+            <span class="sub-label">Subscribe</span></label>
+            <input class="input-footer" id="footer-mail" type="email" name="email" placeholder="E-mail"/>
+          </div>
+          <button type="submit" class="button submit-footer">Subscribe
+          
+          <svg class="icon-tel" width="24px" height="20px">
+              <use href="./images/symbol-defs.svg#icon-tel" ></use>
+            </svg>
+          </button>
+        
+        </form>
+
       </div>
     </footer>
     <script src="./js/modal.js"></script>
