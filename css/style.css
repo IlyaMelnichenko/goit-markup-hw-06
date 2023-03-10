@@ -24,6 +24,9 @@ ul,
 p {
   margin: 0;
 }
+pre{
+  text-decoration: none;
+}
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -520,6 +523,9 @@ img {
   margin: 37px auto auto 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-teleg{
+  margin-left: 16px;
 }
 .submit-footer:focus,
 .submit-footer:hover {
