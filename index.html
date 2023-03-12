@@ -69,57 +69,62 @@
           <form>
             <div class="modal-form">
               <div>
-                <div class="modal-item">
+                
+                  <label class="modal-label" for="modal-name">Name</label>
+                  <div class="modal-item">
                   <input
                     class="input-name"
                     id="modal-name"
                     type="text"
                     name="name"
                   />
-                  <svg class="icon-modal icon-name" width="12px" height="12px">
+                  <svg class="icon-name" >
                     <use href="./images/symbol-defs.svg#icon-Name"></use>
                   </svg>
                 </div>
-                <label for="modal-name">Name</label>
+                <!-- <label for="modal-name">Name</label> -->
               </div>
               <div>
-                <div class="modal-item">
+                
+                  <label class="modal-label" for="modal-tel">Phone</label>
+                  <div class="modal-item">
                   <input
                     class="input-tel"
                     id="modal-tel"
                     type="tel"
                     name="tel"
                   />
-                  <svg class="icon-modal icon-tel" width="13px" height="13px">
+                  <svg class="icon-modal icon-tel" >
                     <use href="./images/symbol-defs.svg#icon-Tel"></use>
                   </svg>
                 </div>
-                <label for="modal-tel">Phone</label>
+                <!-- <label for="modal-tel">Phone</label> -->
               </div>
               <div>
-                <div class="modal-item">
+                
+                  <label class="modal-label" for="modal-mail">Email</label>
+                  <div class="modal-item">
                   <input
                     class="input-mail"
                     id="modal-mail"
                     type="email"
                     name="mail"
                   />
-                  <svg class="icon-modal icon-mail" width="17px" height="12px">
+                  <svg class="icon-modal icon-mail">
                     <use href="./images/symbol-defs.svg#icon-Mail"></use>
                   </svg>
                 </div>
-                <label for="modal-mail">Email</label>
+                <!-- <label for="modal-mail">Email</label> -->
               </div>
 
               <div>
+                <label class="modal-label" for="modal-comment" >Comment</label>
                 <textarea
                   name="comment"
                   id="modal-comment"
-                  cols="30"
-                  rows="10"
                   placeholder="Text input"
                 ></textarea>
-                <label for="modal-comment">Comment</label>
+                <!-- <label for="modal-comment">Comment</label> -->
               </div>
             </div>
 
@@ -508,7 +513,7 @@
           </p>
         </div>
         <div class="socmedia">
-          <p>Social media</p>
+          <p class="footer-label">Social media</p>
           <ul class="socmedia-list">
             <li>
               <a href="" class="network-link footer-link">
@@ -544,18 +549,18 @@
           </ul>
         </div>
         <form class="footer-form">
-          <div class="form-flex">
-            <label class="label" for="footer-mail">
-              <span class="sub-label">Subscribe</span></label
+          <!-- <div class="form-flex"> -->
+            
+              <p class="footer-label">Subscribe</p></label
             >
+           <div class="form-flex">
             <input
               class="input-footer"
               id="footer-mail"
               type="email"
               name="email"
-              placeholder="E-mail"
-            />
-          </div>
+              placeholder="E-mail"/>
+          
           <button type="submit" class="button submit-footer">
             Subscribe
 
@@ -563,6 +568,7 @@
               <use href="./images/symbol-defs.svg#icon-tel"></use>
             </svg>
           </button>
+          </div>
         </form>
       </div>
     </footer>
